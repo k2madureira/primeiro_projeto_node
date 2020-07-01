@@ -36,6 +36,6 @@ describe('ListProfile', () => {
       user_id: loggedUser.id,
     });
 
-    expect(providers).toBe([user1, user2]);
+    expect(providers).toEqual([user1, user2]);
   });
 });
