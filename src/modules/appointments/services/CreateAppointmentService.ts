@@ -70,7 +70,7 @@ class CreateAppointmentService {
     });
     const cacheKey = `provider-appointments:${provider_id}:${format(
       appointmentDate,
-      'YYYY-M-d',
+      'yyyy-M-d',
     )}`;
     await this.cacheProvider.invalidate(cacheKey);
 
