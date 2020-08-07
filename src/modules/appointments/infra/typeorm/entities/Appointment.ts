@@ -25,7 +25,7 @@ class Appointment {
   @Column()
   user_id: string;
 
-  @ManyToOne(() => User)
+  @ManyToOne(() => User /* , { eager: true } */) // eager option ,search information about user by id.
   @JoinColumn({ name: 'user_id' })
   user: User;
 
